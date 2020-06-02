@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+    <link href="style.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body style="background-color: #e3ece8;">
+    <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+    Launch modal
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="">
+          <button type="button" class="close close-btn" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <div class="event-form">
+                <h3>YOUR NAME</h3>
+                <h2>EVENT</h2>
+                <div class="event-inp">
+                    <input type="text"placeholder="Enter Same Value" required>
+                </div>
+                <div class="event-inp">
+                    <input type="date" required>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <i class="fa fa-long-arrow-right rigth-arr" aria-hidden="true" data-toggle="modal" data-target="#images-add" data-dismiss="modal" aria-label="Close"></i>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Modal-2 -->
+  <div class="modal fade" id="images-add" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="">
+          <button type="button" class="close close-btn" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <div class="event-form">
+                <h3>ADD SOME</h3>
+                <h2>IMAGE</h2>
+                <div class="event-inp">
+                    <input type="text" class="images-add"placeholder="add single images" required>
+                    <button class="mt-15 add-btn"> ADD Now </button>
+                </div>
+                <div class="event-inp mt-30">
+                    <p>add some images</p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <i class="fa fa-long-arrow-right rigth-arr" aria-hidden="true" data-toggle="modal" data-target="#set-vanue" data-dismiss="modal" aria-label="Close"></i>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Modal-3 -->
+  <div class="modal fade" id="set-vanue" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="">
+          <button type="button" class="close close-btn" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <div class="event-form">
+                <h3>SET A </h3>
+                <h2>VANUE...</h2>
+                <div class="event-inp">
+                    <input type="text"placeholder="Address Line" required>
+                </div>
+                <div class="event-inp">
+                    <input type="text"placeholder="Zipcode" required>
+                </div>
+                <div class="event-inp">
+                    <input type="text"placeholder="State" required>
+                </div>
+                <div class="event-inp">
+                    <input type="text"placeholder="City" required>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <i class="fa fa-long-arrow-right rigth-arr" aria-hidden="true" data-toggle="modal" data-target="#discroption" data-dismiss="modal" aria-label="Close"></i>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Modal-4 -->
+  <div class="modal fade" id="discroption" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="">
+          <button type="button" class="close close-btn" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <div class="event-form">
+                <h3>ADD A </h3>
+                <h2>DESCRIPTION</h2>
+                <div class="event-inp mt-30">
+                    <textarea class="description" rows="4" placeholder="Enter your Query" cols="35"></textarea>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <i class="fa fa-long-arrow-right rigth-arr" aria-hidden="true"  data-toggle="modal" data-target="#tickets" data-dismiss="modal" aria-label="Close"></i>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Modal-5 -->
+  <div class="modal fade" id="tickets" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="">
+          <button type="button" class="close close-btn" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <div class="event-form">
+                <h3> CREATE YOUR </h3>
+                <h2>TICKETS</h2>
+                <div class="event-inp mt-30">
+                    <input type="text" placeholder="Add Seat Type Eg Premium Class">
+                </div>
+                <div class="event-inp row">
+                    <div class="col-md-8">
+                        <span class="positive" onclick="cuntupincreament()">+</span>
+                        <input type="text"class="contbox" id="inpdeta"value="0" />
+                        <span class="nigitive" onclick="cuntupincreament1()">-</span>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <input type="text" placeholder="Price" />
+                    </div>
+                </div>
+                <div class="event-inp mt-100">
+                    <button class="addmore-btn"> Add More Type </button>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <i class="fa fa-long-arrow-right rigth-arr" aria-hidden="true"></i>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+
+</body>
+
+</html>
+
+<script>
+    var i = 0;
+    function cuntupincreament(){
+        document.getElementById('inpdeta').value = ++i;
+    }
+</script>
+<script>
+    var i = 0;
+    function cuntupincreament1(){
+        document.getElementById('inpdeta').value = --i;
+    }
+</script>
